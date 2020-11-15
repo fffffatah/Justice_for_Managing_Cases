@@ -10,7 +10,9 @@
             <form action="" method="POST">
                 <table>
                     <tr>
-                        <td><?php echo "HELLO"; ?></td>
+                        <td><img src=<?php echo $_SERVER['DOCUMENT_ROOT']."assets/justicelogo.png";?> width="380" height="480"></td>
+                        <td><img src=<?php echo $_SERVER['DOCUMENT_ROOT']."assets/backdrop.png";?> width="380" height="480"></td>
+                        <td><img src=<?php echo $_SERVER['DOCUMENT_ROOT']."assets/backdrop.png";?> width="380" height="480"></td>
                     </tr>
                 </table>
             </form>

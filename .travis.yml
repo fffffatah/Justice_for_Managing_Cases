@@ -1,0 +1,5 @@
+deploy:
+  provider: azure_web_apps
+  username: AZURE_WA_PASSWORD
+  password: AZURE_WA_USERNAME
+  site: AZURE_WA_SITE

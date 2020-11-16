@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/824b296f-9573-429f-84d0-f23918db11bc/resourceGroups/webtech/providers/Microsoft.Web/sites/justicecms",
+    "appService.deploySubpath": "."
+}

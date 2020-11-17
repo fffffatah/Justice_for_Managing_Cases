@@ -1,36 +1,36 @@
 <?php
     session_start();
-	$uname="";
-	$err_uname="";
-	$pass="";
-	$err_pass="";
+	$login_email="";
+	$err_login_email="";
+	$login_pass="";
+	$err_login_pass="";
 	$hasError=false;
 	$flag=false;
-	if(isset($_POST["login"])){
-		if(empty($_POST["uname"])){
-			$err_uname="Username Required";
+	if(isset($_POST["login_button"])){
+		if(empty($_POST["login_email"])){
+			$err_login_email="Email Required";
 			$hasError =true;	
 		}
 		else{
-			$uname = htmlspecialchars($_POST["uname"]);
+			$login_email = htmlspecialchars($_POST["login_email"]);
 		}
-		if(empty ($_POST["pass"])){
-			$err_pass="Password Required";
+		if(empty ($_POST["login_pass"])){
+			$err_login_pass="Password Required";
 			$hasError = true;
 		}
 		else{
-			$pass=htmlspecialchars($_POST["pass"]);
+			$login_pass=htmlspecialchars($_POST["login_pass"]);
         }
 		
 		if(!$hasError){
-			$users = simplexml_load_file($_SERVER['DOCUMENT_ROOT']."/xmldata/users.xml");
+			$users = simplexml_load_file("../xmldata/users.xml");
             $flag=false;
-            $cookie_uname="";
+            $cookie_login_email="";
             $user_type="";
 			foreach($users as $user){
-                if(strcmp($user->uname,$_POST["uname"])==0 && strcmp($user->pass,$_POST["pass"])==0){
+                if(strcmp($user->email,$_POST["login_email"])==0 && strcmp($user->pass,$_POST["login_pass"])==0){
                     $flag=true;
-                    $cookie_uname=$user->uname;
+                    $cookie_login_email=$user->email;
                     $user_type=$user->type;
 					break;
                 }
@@ -40,19 +40,25 @@
 			}
 			else{
 				session_start();
-			    $_SESSION["uname"] = $cookie_uname;
-                setcookie("uname",$cookie_uname,time() + 120);
-                if(strcmp($user_type,"admin")){
-                    header("Location: ".$_SERVER['DOCUMENT_ROOT']."/pages/admin/dashboard.php");
+			    $_SESSION["login_email"] = $cookie_login_email;
+                setcookie("login_email",$cookie_login_email,time() + 120);
+                if(strcmp($user_type,"admin")==0){
+                    header("Location: ../pages/admin/dashboard.php");
                 }
-                elseif(strcmp($user_type,"lawyer")){
-                    header("Location: ".$_SERVER['DOCUMENT_ROOT']."/pages/lawyer/dashboard.php");
+                elseif(strcmp($user_type,"lawyer")==0){
+                    header("Location: ../pages/lawyer/dashboard.php");
                 }
                 else{
-                    header("Location: ".$_SERVER['DOCUMENT_ROOT']."/pages/complainant/dashboard.php");
+                    header("Location: ../pages/complainant/dashboard.php");
                 }
 			}
 		}
 	}
-	
+
+	if(isset($_POST["signup_lawyer_button"])){
+		header("Location: ../pages/lawyer/registration.php");
+	}
+	if(isset($_POST["signup_complainant_button"])){
+		header("Location: ../pages/complainant/registration.php");
+	}
 ?>

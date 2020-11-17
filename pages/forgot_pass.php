@@ -14,8 +14,8 @@
                 <td><img src="../assets/justicelogo.png"; width="380" height="480"></td>
                 <td align="center" id="forgot-pass-email-box-style">
                     <h4>Enter Your Email</h4>
-                    <input type="text" name="forgot-pass-email" placeholder="Email"><br><br>
-                    <input type="submit" name="forgot-pass-button" value="Submit">
+                    <input type="text" name="forgot_pass_email" placeholder="Email"><span style="color:red;">*<?php echo $err_forgot_pass_email;?></span><br><br>
+                    <a href="../../pages/landing.php">Cancel</a> <input type="submit" name="forgot_pass_button" value="Submit">
                 </td>
             </tr>
         </table>

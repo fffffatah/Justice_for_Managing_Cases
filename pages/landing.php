@@ -22,7 +22,7 @@
                         <td align="center" id="signup-box-style">
                             <h4>Signup</h4>
                             <input type="submit" name="signup_lawyer_button" value="As Lawyer"><br><br>
-                            <input type="submit" name="signup_complainant_button" value="As Complainant"><br>
+                            <input type="submit" name="signup_complainant_button" value="As Complainant/Client"><br>
                         </td>
                     </tr>
                 </table>

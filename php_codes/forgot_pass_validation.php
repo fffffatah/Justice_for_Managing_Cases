@@ -21,7 +21,7 @@
             $hasError=true;
         }
         if(!$hasError){
-            $users = simplexml_load_file($_SERVER['DOCUMENT_ROOT']."/xmldata/users.xml");
+            $users = simplexml_load_file("../xmldata/users.xml");
             $flag=false;
             
             foreach($users as $user){

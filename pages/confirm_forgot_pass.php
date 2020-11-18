@@ -16,7 +16,7 @@
                     <h4>Reset Password</h4>
                     <input type="text" name="forgot_pass_new" placeholder="New Password"><span style="color:red;">*<?php echo $err_forgot_pass_new;?></span><br><br>
                     <input type="password" name="forgot_pass_confirm" placeholder="Confirm New Password"><span style="color:red;">*<?php echo $err_forgot_pass_confirm;?></span><br><br>
-                    <a href="../../pages/landing.php">Cancel</a> <input type="submit" name="forgot_pass_confirm_button" value="Reset">
+                    <a href="../pages/landing.php">Cancel</a> <input type="submit" name="forgot_pass_confirm_button" value="Reset">
                 </td>
             </tr>
         </table>

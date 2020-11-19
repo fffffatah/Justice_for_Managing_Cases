@@ -26,5 +26,6 @@
             </tr>
         </table>
         </center>
+        <a href="dashboard.php">Back</a>
     </body>
 </html>

@@ -7,6 +7,7 @@
 <html>
     <head>
         <title>Lawyer - Client Details</title>
+        <link rel="stylesheet" type="text/css" href="../../css/lawyer_clientdetails.css">
     </head>
     <body>
         <center>
@@ -14,8 +15,14 @@
             <h1>Demo client details</h1>
             <tr>
                 <td>Name: John Doe</td>
+            </tr>
+            <tr>
                 <td>NID: 1231231</td>
+            </tr>
+            <tr>
                 <td>Current Case: demo case</td>
+            </tr>
+            <tr>
                 <td>Status:
                     <select name="client_status">
                         <option disabled selected>Select Status</option>
@@ -65,8 +72,8 @@
                         <table id="meeting-box-style">
                             <h4>Schedule A Meeting</h4>
                             <tr>
-                                <td>Next Meeting: 11-11-2020</td>
-                                <td><!--EMPTY--></td>
+                                <td align="right">Next Meeting:</td>
+                                <td align="left">11-11-2020</td>
                             </tr>
                             <tr>
                                 <td align="right">Meeting Title:</td>
@@ -79,6 +86,10 @@
                             <tr>
                                 <td align="right">Meeting Date:</td>
                                 <td align="left"><input type="date" name="meeting_date"><span style="color:red;">*<?php echo $err_meeting_date;?></td>
+                            </tr>
+                            <tr>
+                                <td align="right">Meeting Time:</td>
+                                <td align="left"><input type="time" name="meeting_time"><span style="color:red;">*<?php echo $err_meeting_time;?></td>
                             </tr>
                             <tr>
                                 <td><!--EMPTY--></td>

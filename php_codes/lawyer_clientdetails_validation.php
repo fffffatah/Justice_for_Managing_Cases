@@ -5,6 +5,8 @@
     $err_meeting_description="";
     $meeting_date="";
     $err_meeting_date="";
+    $meeting_time="";
+    $err_meeting_time="";
     $hasError=false;
 
     if(isset($_POST["schedule_meeting_button"])){
@@ -28,6 +30,13 @@
         }
         else{
             $meeting_date=$_POST["meeting_date"];
+        }
+        if(!isset($_POST["meeting_time"])){
+            $err_meeting_time="Meeting Time Required";
+            $hasError=true;
+        }
+        else{
+            $meeting_time=$_POST["meeting_time"];
         }
 
         if(!$hasError){

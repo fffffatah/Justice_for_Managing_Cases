@@ -96,7 +96,7 @@
                 <td>123123</td>
                 <td>asdasdsa@sds.ds</td>
                 <td>12345678912</td>
-                <td><input type="submit" name="approve_button" vale="Approve"></td>
+                <td><input type="submit" name="approve_button" value="Approve"></td>
             </tr>
             <tr>
                 <td>2</td>

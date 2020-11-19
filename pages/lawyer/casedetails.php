@@ -35,7 +35,7 @@
                         <td align="left"><input type="date" name="hearing_date" value="<?php echo "11-11-2020"; ?>"><span style="color:red;">*<?php echo $err_hearing_date;?></span></td>
                     </tr>
                     <tr>
-                        <td align="right">Initial Status:</td>
+                        <td align="right">Status:</td>
                         <td align="left">
                             <select name="initial_status">
                                 <option disabled>Select Status</option>
@@ -50,7 +50,7 @@
                         <td align="right">Close Case:</td>
                         <td align="left">
                             <select name="closing_status">
-                                <option disabled>Select Closing Status</option>
+                                <option disabled selected>Select Closing Status</option>
                                 <option>Won</option>
                                 <option>Lost</option>
                                 <option>Running</option>

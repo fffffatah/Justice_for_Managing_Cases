@@ -14,7 +14,7 @@
 		<table border="2" id="lawyer-dashboard-style">
             <tr>
                 <td align="left"><a href="addcase.php">Add New Case</a></td>
-				<td></td>
+				<td><a href="clients.php">Clients</a></td>
 				<td></td>
 				<td></td>
 				<td></td>

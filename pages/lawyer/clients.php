@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="../../css/lawyer_clients.css">
     </head>
     <body>
+        <center>
         <table id="client-list-style">
             <tr>
                 <td align="center">
@@ -75,8 +76,10 @@
                 </td>
             </tr>
         </table>
+        </center>
         <table border="2" id="client-approval-style">
-            <center><h1>Clients That Wants To Hire You</h1></center>
+            <center>
+            <h1>Clients That Wants To Hire You</h1>
             <tr>
                 <td><b>SR. NO</b></td>
                 <td><b>CLIENT NAME</b></td>
@@ -102,5 +105,7 @@
                 <td><input type="submit" name="approve_button"></td>
             </tr>
         </table>
+        </center>
+        <a href="dashboard.php">Back</a>
     </body>
 </html>

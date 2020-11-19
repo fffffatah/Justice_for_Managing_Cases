@@ -62,23 +62,25 @@
                             <td>11-11-2020</td>
                             <td>19-11-2020</td>
                         </tr>
+                        <form action="" method="POST">
                         <tr>
                             <td>2</td>
                             <td><!--EMPTY--></td>
-                            <td><input type="number" name="client_pay_nid" placeholder="Client NID"><?php echo $err_client_pay_nid; ?></td>
+                            <td><input type="number" name="client_pay_nid" placeholder="Client NID"><span style="color:red;"><?php echo $err_client_pay_nid; ?></span></td>
                             <td><!--EMPTY--></td>
                             <td><!--EMPTY--></td>
-                            <td><input type="number" name="client_pay_due" placeholder="Due Amount"><?php echo $err_client_pay_due; ?></td>
-                            <td><input type="date" name="client_pay_due_date"><?php echo $err_client_pay_due_date; ?></td>
+                            <td><input type="number" name="client_pay_due" placeholder="Due Amount"><span style="color:red;"><?php echo $err_client_pay_due; ?></span></td>
+                            <td><input type="date" name="client_pay_due_date"><span style="color:red;"><?php echo $err_client_pay_due_date; ?></span></td>
                             <td><input type="submit" name="add_pay_button" value="Add"></td>
                         </tr>
+                        </form>
                     </table>
                 </td>
             </tr>
         </table>
         </center>
+        <center>
         <table border="2" id="client-approval-style">
-            <center>
             <h1>Clients That Wants To Hire You</h1>
             <tr>
                 <td><b>SR. NO</b></td>
@@ -94,7 +96,7 @@
                 <td>123123</td>
                 <td>asdasdsa@sds.ds</td>
                 <td>12345678912</td>
-                <td><input type="submit" name="approve_button"></td>
+                <td><input type="submit" name="approve_button" vale="Approve"></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -102,7 +104,7 @@
                 <td>123123</td>
                 <td>asdasdsa@sds.ds</td>
                 <td>12345678912</td>
-                <td><input type="submit" name="approve_button"></td>
+                <td><input type="submit" name="approve_button" value="Approve"></td>
             </tr>
         </table>
         </center>

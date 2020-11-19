@@ -47,6 +47,21 @@
                         </td>
                     </tr>
                     <tr>
+                        <td align="right">Close Case:</td>
+                        <td align="left">
+                            <select name="closing_status">
+                                <option disabled>Select Closing Status</option>
+                                <option>Won</option>
+                                <option>Lost</option>
+                                <option>Running</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">Comment:</td>
+                        <td align="left"><textarea name="closing_comment" placeholder="Closing Comment"></textarea></td>
+                    </tr>
+                    <tr>
                         <td><a href="dashboard.php">Cancel</a></td>
                         <td align="right"><input type="submit" name="update_case_button" value="Update"><br><br></td>
                     </tr>

@@ -16,7 +16,7 @@
                 <td align="left"><a href="addcase.php">Add New Case</a></td>
 				<td><a href="clients.php">Clients</a></td>
 				<td><a href="meetings.php">Meetings</a></td>
-				<td></td>
+				<td><a href="reportreviews.php">Report/Reviews</a></td>
 				<td></td>
 				<td></td>
 				<td align="right"><a href="../landing.php">Logout</a></td>

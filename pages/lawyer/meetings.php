@@ -1,6 +1,6 @@
 <?php
     if(!isset($_COOKIE["login_email"])){
-		//header("Location: ../landing.php");
+		header("Location: ../landing.php");
 	}
 ?>
 <html>
@@ -10,7 +10,7 @@
     </head>
     <body>
         <center>
-        <table id="meetings-style">
+        <table border="2" id="meetings-style">
             <h1>My Meetings</h1>
             <tr>
                 <td><b>SR. NO</b></td>

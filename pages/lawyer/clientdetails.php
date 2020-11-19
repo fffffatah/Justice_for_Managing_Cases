@@ -1,7 +1,7 @@
 <?php
     include_once "../../php_codes/lawyer_clientdetails_validation.php";
     if(!isset($_COOKIE["login_email"])){
-		//header("Location: ../landing.php");
+		header("Location: ../landing.php");
 	}
 ?>
 <html>

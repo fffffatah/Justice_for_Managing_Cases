@@ -26,4 +26,18 @@
     <address/>
     <type>lawyer</type>
   </user>
+    <profilepic>IMG_3391.JPG</profilepic>
+    <fullname>shaon ahmed</fullname>
+    <username>shaon</username>
+    <email>shaonaiub@gmail.cpm</email>
+    <phone>01303552419</phone>
+    <pass>Shaon123#</pass>
+    <nid>111111111111111111</nid>
+    <birthday>1111-11-11</birthday>
+    <gender>Male</gender>
+    <city>bogra</city>
+    <state>5800</state>
+    <zip/>
+    <type>complainant</type>
+  </user>
 </users>

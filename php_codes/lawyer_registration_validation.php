@@ -158,7 +158,7 @@
             $user = $users->addChild("user");
             $user->addChild("profilepic",$reg_pp);
             $user->addChild("fullname",$reg_fullname);
-			$user->addChild("username",$reg_username);
+			      $user->addChild("username",$reg_username);
             $user->addChild("email",$reg_email);
             $user->addChild("phone",$reg_phone);
             $user->addChild("pass",$reg_pass);

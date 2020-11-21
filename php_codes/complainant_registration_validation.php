@@ -194,8 +194,6 @@
 
 			$file = fopen("../../xmldata/users.xml","w");
 			fwrite($file,$xml->saveXML());
-        }
       }
-
-
+      }
 ?>

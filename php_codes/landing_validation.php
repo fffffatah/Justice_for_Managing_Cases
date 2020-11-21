@@ -49,7 +49,7 @@
                     header("Location: ../pages/lawyer/dashboard.php");
                 }
                 else{
-                    header("Location: ../pages/complainant/confirm_reg.php");
+                    header("Location: ../pages/complainant/dashboard.php");
                 }
 			}
 		}

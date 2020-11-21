@@ -194,6 +194,9 @@
 
 			$file = fopen("../../xmldata/users.xml","w");
 			fwrite($file,$xml->saveXML());
+      if(isset($_POST["reg_button"])){
+    		header("Location: ../../pages/confirm_reg.php");
+    	}
       }
       }
 ?>

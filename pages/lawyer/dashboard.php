@@ -1,63 +1,56 @@
-<?php
-    if(!isset($_COOKIE["login_email"])){
-		header("Location: ../landing.php");
-	}
-?>
+
+  
 <html>
-	<head>
-		<title>Lawyer - Dashboard</title>
-		<link rel="stylesheet" type="text/css" href="../../css/lawyer_dashboard.css">
-	</head>
+	<head></head>
 	<body>
-		<center>
-		<h1>Lawyer - Dashboard</h1>
-		<table border="2" id="lawyer-dashboard-style">
-            <tr>
-                <td align="left"><a href="addcase.php">Add New Case</a></td>
-				<td><a href="clients.php">Clients</a></td>
-				<td><a href="meetings.php">Meetings</a></td>
-				<td><a href="reportreviews.php">Report/Reviews</a></td>
-				<td></td>
-				<td></td>
-				<td align="right"><a href="../landing.php">Logout</a></td>
-            </tr>
-            <tr>
-                <td><b><u>SR.NO</u></b></td>
-                <td><b><u>CASE TITLE</u></b></td>
-                <td><b><u>COMPLAINANT</u></b></td>
-                <td><b><u>CLIENT</u></b></td>
-				<td><b><u>NEXT HEARING</u></b></td>
-				<td><b><u>STATUS</u></b></td>
-                <td><b><u>DELETE</u></b></td>
-            </tr>
-            <tr>
-				<td>1</td>
-                <td><a href="casedetails.php">Demo Case 1</a></td>
-                <td>John</td>
-                <td>Jane</td>
-				<td>12-12-2020</td>
-				<td>Hearing Done(1st)</td>
-                <td><img src="../../assets/delete.png"></td>
+		<table border="1">
+			<tr>
+				<td> <a href="addbook.php">Add New Book</a> </td>
 			</tr>
 			<tr>
-				<td>2</td>
-                <td><a href="casedetails.php">Demo Case 2</a></td>
-                <td>Jack</td>
-                <td>James</td>
-				<td>12-12-2020</td>
-				<td>Postponed</td>
-                <td><img src="../../assets/delete.png"></td>
+				<td>SR.NO</td>
+				<td>NAME</td>
+				<td>PUBLISHER</td>
+				<td>ISBN</td>
+				<td>PRICE</td>
+				<td>IMAGE</td>
+				<td>DELETE</td>
 			</tr>
-			<tr>
-				<td>3</td>
-                <td><a href="casedetails.php">Demo Case 3</a></td>
-                <td>Jimmy</td>
-                <td>Jade</td>
-				<td>12-12-2020</td>
-				<td>Finished</td>
-                <td><img src="../../assets/delete.png"></td>
-			</tr>
-        </table>
-		</center>
+			<?php 
+				$books = simplexml_load_file("books.xml");
+			
+				$data = $books->book;
+				$bookname="";
+				$publisher="";
+				$isbn="";
+				$price="";
+				$image="";
+				$serial="";
+				$delete="";
+				//echo $data[1]->username;
+				$i=0;
+				for( ;$i<count($data);$i++)
+				{
+					$bookname=$data[$i]->Name;
+					$publisher=$data[$i]->Publisher;
+					$isbn=$data[$i]->ISBN;
+					$price=$data[$i]->PRICE;
+					$image=$data[$i]->IMAGE;
+					$serial=$data[$i]->sr_no;
+					$delete=$data[$i]->DELETe;
+		
+					echo "<tr>
+					<td>$serial</td>
+					<td>$bookname</td>
+					<td>$publisher</td>
+					<td>$isbn</td>
+					<td>$price</td>
+					<td><img src='$image' width='100px' height='100px'></td>
+					<td><img src='$delete' width='70px' height='70px'></td>
+					</tr>";		
+				}
+			?>
+		</table>
 	</body>
 </html>
+

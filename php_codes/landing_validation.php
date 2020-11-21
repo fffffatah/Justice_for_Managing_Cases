@@ -9,7 +9,7 @@
 	if(isset($_POST["login_button"])){
 		if(empty($_POST["login_email"])){
 			$err_login_email="Email Required";
-			$hasError =true;	
+			$hasError =true;
 		}
 		else{
 			$login_email = htmlspecialchars($_POST["login_email"]);
@@ -21,7 +21,7 @@
 		else{
 			$login_pass=htmlspecialchars($_POST["login_pass"]);
         }
-		
+
 		if(!$hasError){
 			$users = simplexml_load_file("../xmldata/users.xml");
             $flag=false;
@@ -34,7 +34,7 @@
                     $user_type=$user->type;
 					break;
                 }
-			}			
+			}
 			if(!$flag){
 				echo "Invalid Credentials!";
 			}
@@ -59,6 +59,6 @@
 		header("Location: ../pages/lawyer/registration.php");
 	}
 	if(isset($_POST["signup_complainant_button"])){
-		header("Location: ../pages/complainant/registration.php");
+		header("Location: ../pages/complainant/com_registration.php");
 	}
 ?>

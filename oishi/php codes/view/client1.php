@@ -5,6 +5,9 @@
   $err_lawyername="";
   $Case_Status="";
   $err_CaseStatus="";
+  $Client_Name="";
+  $err_ClientName="";
+
 
 
 ?>
@@ -22,9 +25,14 @@
 	 <img src="img/justicelogo.png" alt="">
 	 </div>
 	 <div class="fclient">
-	      <h3>case1</h3>
+	     <center><h3 style="color:Green;">Client Information</h3></center>
 		      <form action="" method="post">
 			      <table>
+				  
+				   <tr>
+						<td>Client Name:</td>
+						<td><span style="color:red;"><?php echo $err_ClientName;?></span></td>
+						</tr>
 				  
 				      <tr>
 						<td>Case Name:</td>

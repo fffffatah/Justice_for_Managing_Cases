@@ -28,6 +28,11 @@ $err_HearingTime="";
 	 <div class="Schedule">
 	 <form action="" method="post">
 	     <table>
+		 <tr>
+		 <td <td align="right" id="registration-box-style">
+		  <center><h3 style="color:Green;">Schedule</h3></center>
+		 </td>
+		 </tr>
 		 
 		 
 		 

@@ -15,7 +15,7 @@ $err_PaidAmount="";
 	  <link rel="stylesheet" href="css/style.css">
   </head>
      <body>
-        <h1>payment</h1>
+        
 		 <div class="payment">
 		
 		<form action="" method="post">
@@ -23,7 +23,14 @@ $err_PaidAmount="";
 		
 		
 		 <tr>
-			<td>Due:</td>
+		 <td <td align="right" id="registration-box-style">
+		 <center><h3 style="color:Green;">Payment</h3></center>
+		 </td>
+		 </tr>
+		 
+		 <tr>
+		     <td>Due:</td>
+			 
 			  <td><span style="color:red;"><?php echo $err_Due;?></span></td>
 		 </tr>
 				

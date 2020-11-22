@@ -37,10 +37,15 @@ $err_Address="";
 <link rel="stylesheet" href="css/style.css">
 </head>
     <body>
-	  <h1>Profile</h1>
+	  
 	  <div class="profile">
 	     <form action="" method="post">
 		     <table>
+			 <tr>
+		 <td <td align="right" id="registration-box-style">
+		  <center><h3 style="color:Green;">Profile</h3></center>
+		 </td>
+		 </tr>
 			 
 			 
 			        <tr>
@@ -92,18 +97,18 @@ $err_Address="";
 					
 					<tr>
 						<td colspan="2" align="right">
-							 <a href="Edit Profile.php"> <input type ="button" name ="" value ="Edit Profile"></a>
+							  <a href="Edit Profile.php"> <input type ="button" name ="" value ="Edit Profile"></a>
 							 
 							 
 						</td>
 					</tr>
 			 
 			 
-			 
+			
 			 
 			 </table>
 			  <h5><a href='client1.php'>Go back</a></h5>
-		 
+			  
 		 
 		 
 		 

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<clients>
+   <client>
+		<name>Mahia Rezwana Oishi</name>
+		<username>Oishi</username>
+		<email>mahia@gmail.com</email>
+		<phone>01789656785</phone>
+		<password>Oishi1234#</password>
+		<nid>123456789</nid>
+		<birthday>1998-11-25</birthday>
+		<gender>Female</gender>
+		<address>Nikunja</address>
+	</client>
+</clients>

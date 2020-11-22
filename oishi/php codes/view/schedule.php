@@ -24,7 +24,7 @@ $err_HearingTime="";
   <title>Schedule</title>
   <link rel="stylesheet" href="css/style.css">
   </head>
-     <h1>Schedule</h1>
+     
 	 <div class="Schedule">
 	 <form action="" method="post">
 	     <table>

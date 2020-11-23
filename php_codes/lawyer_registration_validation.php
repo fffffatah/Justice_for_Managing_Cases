@@ -24,7 +24,12 @@
     $reg_gender="";
     $err_reg_gender="";
     $reg_address="";
-    $err_reg_address="";
+   $reg_city="";
+    $err_reg_city="";
+    $reg_state="";
+    $err_reg_state="";
+    $reg_zip="";
+    $err_reg_zip="";
     $hasError=false;
     if(isset($_POST["reg_button"])){
         //PROFILE PIC VALIDATION
@@ -144,12 +149,26 @@
             $hasError=true;
         }
         //ADDRESS VALIDATION
-        if(empty($_POST["reg_address"])){
-            $err_reg_address="Address Required";
+        if(empty($_POST["city"])){
+            $err_reg_city="City Required";
             $hasError=true;
         }
         else{
-            $reg_address=htmlspecialchars($_POST["reg_address"]);
+            $reg_city=htmlspecialchars($_POST["city"]);
+        }
+        if(empty($_POST["state"])){
+            $err_reg_state="state Required";
+            $hasError=true;
+        }
+        else{
+            $reg_state=htmlspecialchars($_POST["state"]);
+        }
+        if(empty($_POST["zip"])){
+            $err_reg_zip="Zip/Postal Code Required";
+            $hasError=true;
+        }
+        else{
+            $reg_state=htmlspecialchars($_POST["zip"]);
         }
 
         if(!$hasError){
@@ -158,14 +177,16 @@
             $user = $users->addChild("user");
             $user->addChild("profilepic",$reg_pp);
             $user->addChild("fullname",$reg_fullname);
-			      $user->addChild("username",$reg_username);
+			$user->addChild("username",$reg_username);
             $user->addChild("email",$reg_email);
             $user->addChild("phone",$reg_phone);
             $user->addChild("pass",$reg_pass);
             $user->addChild("nid",$reg_nid);
             $user->addChild("birthday",$reg_dob);
             $user->addChild("gender",$reg_gender);
-            $user->addChild("address",$reg_address);
+            $user->addChild("city",$reg_city);
+            $user->addChild("state",$reg_state);
+            $user->addChild("zip",$reg_zip);
             $user->addChild("type","lawyer");
 
 			$xml = new DOMDocument("1.0");

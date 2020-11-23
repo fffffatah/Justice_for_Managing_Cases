@@ -48,8 +48,7 @@
                 elseif(strcmp($user_type,"lawyer")==0){
                     header("Location: ../pages/lawyer/dashboard.php");
                 }
-                else{
-                    header("Location: ../pages/complainant/dashboard.php");
+                else{header("Location: ../oishi/php codes/view/client1.php");
                 }
 			}
 		}

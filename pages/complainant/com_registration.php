@@ -13,7 +13,7 @@
                     <tr >
                         <td><img src="../../assets/justicelogo.png"; width="380" height="480"></td>
                         <td align="right" id="registration-box-style">
-                            <center><h4 style="color:Green;">Register as complainant</h4></center>
+                            <h4 align="center" style="color:Green;">Register as complainant</h4>
                             <label for="profile">Profile Picture: </label><input type="file" name="reg_pp" accept="image/*"><span style="color:red;">*<?php echo $err_reg_pp;?></span><br><br>
                             <label for="fullname">Full Name: </label><input type="text" name="reg_fullname" placeholder="Full Name" value="<?php echo $reg_fullname; ?>"><span style="color:red;">*<?php echo $err_reg_fullname;?></span><br><br>
                             <label for="username">User Name: </label><input type="text" name="reg_username" placeholder="User Name" value="<?php echo $reg_username; ?>"><span style="color:red;">*<?php echo $err_reg_username;?></span><br><br>
@@ -24,11 +24,11 @@
                             <label for="nid">NID: </label><input type="number" name="reg_nid" placeholder="NID" value="<?php echo $reg_nid; ?>"><span style="color:red;">*<?php echo $err_reg_nid;?></span><br><br>
                             <label for="birthday">Birthday: </label><input type="date" name="reg_dob"><span style="color:red;">*<?php echo $err_reg_dob;?></span><br><br>
                             <label for="gender">Gender: </label><input type="radio" name="reg_gender" value="Male"> Male
-                            <input type="radio" name="gender" value="Female"> Female<span style="color:red;">*<?php echo $err_reg_gender;?></span><br><br>
+                            <input type="radio" name="reg_gender" value="Female"> Female<span style="color:red;">*<?php echo $err_reg_gender;?></span><br><br>
                             <label for ="address">City: </label><input type="text" name="city" placeholder="City"><span style="color:red;">*<?php echo $err_reg_city;?></span><br><br>
                             <label for ="address">State:<input type="text" name="state" placeholder="State"><span style="color:red;">*<?php echo $err_reg_state;?></span><br><br>
                             <label for ="address">Zip/Postal:<input type="text" name="zip" placeholder="postal/Zip-Code"><span style="color:red;">*<?php echo $err_reg_zip;?></span><br><br>
-                            <a href="../../pages/landing.php"><u>Already registered!go to login</u></a> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" class="button" name="reg_button"value="Register"><br><br>
+                            <a href="../../pages/landing.php"><u>Already registered!go to login</u></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" class="button" name="reg_button"value="Register"><br><br>
                         </td>
 
                     </tr>

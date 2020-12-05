@@ -32,7 +32,7 @@
     <username>shaon</username>
     <email>shaonaiub@gmail.com</email>
     <phone>01478523698</phone>
-    <pass>Shaon123456#</pass>
+    <pass>Shaon123#</pass>
     <nid>147852369</nid>
     <birthday>1995-11-11</birthday>
     <gender>Male</gender>
@@ -41,5 +41,19 @@
     <zip/>
     <type>complainant</type>
   </user>
-  
+  <user>
+    <profilepic>IMG_2957.JPG</profilepic>
+    <fullname>shaon ahmed</fullname>
+    <username>shaon</username>
+    <email>shaonaiub@gmail.com</email>
+    <phone>01474582585</phone>
+    <pass>Shaon123456#</pass>
+    <nid>8569362458</nid>
+    <birthday>1998-02-20</birthday>
+    <gender>Male</gender>
+    <city>Bogra</city>
+    <state>Bogra</state>
+    <zip>5800</zip>
+    <type>judge</type>
+  </user>
 </users>

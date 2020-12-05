@@ -45,12 +45,16 @@
                 if(strcmp($user_type,"admin")==0){
                     header("Location: ../pages/admin/dashboard.php");
                 }
-                elseif(strcmp($user_type,"lawyer")==0){
+                if(strcmp($user_type,"lawyer")==0){
                     header("Location: ../pages/lawyer/dashboard.php");
                 }
-                else{
-                    header("Location: ../pages/complainant/dashboard.php");
+                if(strcmp($user_type,"complainant")==0){
+                    header("Location: ../oishi/php codes/view/client1.php");
                 }
+                if(strcmp($user_type,"judge")==0) {
+                   header("Location: ../pages/judge/jud_dashboard.php");
+                }
+
 			}
 		}
 	}
@@ -60,5 +64,8 @@
 	}
 	if(isset($_POST["signup_complainant_button"])){
 		header("Location: ../pages/complainant/com_registration.php");
+	}
+  if(isset($_POST["signup_complainant_button"])){
+		header("Location: ../pages/judge/jud_registration.php");
 	}
 ?>

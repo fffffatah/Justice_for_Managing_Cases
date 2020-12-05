@@ -185,7 +185,7 @@
             $user->addChild("city",$reg_city);
             $user->addChild("state",$reg_state);
             $user->addChild("zip",$reg_zip);
-            $user->addChild("type","complainant");
+            $user->addChild("type","judge");
 
 			$xml = new DOMDocument("1.0");
 			$xml->preserveWhiteSpace=false;

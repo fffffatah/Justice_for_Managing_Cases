@@ -1,0 +1,54 @@
+#lawyer-dashboard-style{
+    -webkit-box-shadow:3px 3px 5px 6px #ccc;
+    -moz-box-shadow:3px 3px 5px 6px #ccc;
+    box-shadow:3px 3px 5px 6px #ccc;
+    padding-left: 20px;
+    padding-right: 20px;
+    border:thick;
+}
+header {
+  background-color:#050807;
+  padding: 3px;
+  text-align: right;
+  font-size: 8px;
+  color: white;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #050807;
+   color: white;
+   text-align: center;
+}
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 2px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover, a:active {
+  background-color: black;
+  color: white;
+}
+.search{
+  padding: 8px 250px;
+  text-align: center;
+
+  text-decoration: none;
+}
+.btn{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+}

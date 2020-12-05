@@ -22,7 +22,8 @@
                         <td align="center" id="signup-box-style">
                             <h4>Signup</h4>
                             <input type="submit" style="color:#342D7E;" name="signup_lawyer_button" value="As Lawyer"><br><br>
-                            <input type="submit" style="color:#0000A0;" name="signup_complainant_button" value="As Complainant"><br>
+                            <input type="submit" style="color:#0000A0;" name="signup_complainant_button" value="As Complainant"><br><br>
+                            <input type="submit" style="color:#641E16;" name="signup_complainant_button" value="As Judge"><br>
                         </td>
                     </tr>
                 </table>

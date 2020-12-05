@@ -1,12 +1,12 @@
 <?php
     include_once "../../php_codes/lawyer_casedetails_validation.php";
     if(!isset($_COOKIE["login_email"])){
-		//header("Location: ../landing.php");
+
 	}
 ?>
 <html>
     <head>
-        <title>Lawyer - Case Details</title>
+        <title>Case Details</title>
         <link rel="stylesheet" type="text/css" href="../../css/lawyer_case_details.css">
     </head>
     <body>
